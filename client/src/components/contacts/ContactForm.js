@@ -28,9 +28,6 @@ const ContactForm = props => {
   })
 
   const { name, email, phone, type } = contact
-  const clearAll = () => {
-    clearCurrent()
-  }
 
   const onChange = e =>
     setContact({ ...contact, [e.target.name]: e.target.value })
@@ -42,12 +39,11 @@ const ContactForm = props => {
     } else {
       updateContact(contact)
     }
-    setContact({
-      name: '',
-      email: '',
-      phone: '',
-      type: 'personal'
-    })
+    clearAll()
+  }
+
+  const clearAll = () => {
+    clearCurrent()
   }
 
   return (
