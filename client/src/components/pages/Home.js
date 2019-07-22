@@ -1,5 +1,4 @@
 import React, { useContext, useEffect } from 'react'
-import PropTypes from 'prop-types'
 import Contacts from '../contacts/contacts'
 import ContactForm from '../contacts/ContactForm'
 import ContactFilter from '../contacts/ContactFilter'
@@ -25,7 +24,5 @@ const Home = () => {
     </div>
   )
 }
-
-Home.propTypes = {}
 
 export default Home
